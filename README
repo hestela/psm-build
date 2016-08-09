@@ -1,4 +1,3 @@
-[![Build Status](https://ci.easycashmoney.org/job/hestela/job/psm-build/job/master/badge/icon)](https://ci.easycashmoney.org/job/hestela/job/psm-build/job/master/)
-
+[![Build Status](https://ci.easycashmoney.org/buildStatus/icon?job=hestela/psm-build/master)](https://ci.easycashmoney.org/job/hestela/job/psm-build/job/master/)
 --
 Clone of 01org/psm for testing jenkins build, no real development here.
