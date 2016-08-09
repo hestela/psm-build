@@ -536,13 +536,6 @@ ips_try_lock_shared_context (struct ptl_shared *recvshc))
 
 PSMI_INLINE(
 void
-ips_lock_shared_context (struct ptl_shared *recvshc))
-{
-    pthread_spin_lock(recvshc->context_lock);
-}
-
-PSMI_INLINE(
-void
 ips_unlock_shared_context (struct ptl_shared *recvshc))
 {
     pthread_spin_unlock(recvshc->context_lock);
