@@ -10,8 +10,7 @@ node('master') {
         stage 'Build'
             sh 'make'
         stage 'Install'
-            env.DESTDIR = "${env.PWD}/test-install"
-            sh 'make install'
+            sh 'DESTDIR=`pwd`/install make install'
         currentBuild.result = "SUCCESS"
     } catch (err) {
         currentBuild.result = "FAILURE"
