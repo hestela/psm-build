@@ -7,6 +7,7 @@ node('master') {
             sh 'make --version'
         stage 'Fix Build'
             sh 'sed -i "s/uname -p/uname -m/g" buildflags.mak'
+            sh 'make clean'
         stage 'Build'
             sh 'make'
         stage 'Install'
