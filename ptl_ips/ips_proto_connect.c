@@ -452,7 +452,6 @@ ips_flow_init(struct ips_flow *flow, ips_path_rec_t *path, ips_epaddr_t *ipsaddr
 {
     struct ips_proto *proto = ipsaddr->proto;
     
-    psmi_assert_always(protocol < IPS_MAX_PROTOCOL);
     psmi_assert_always(flow_index < IPS_MAX_FLOWINDEX);
 
     SLIST_NEXT(flow, next) = NULL;
