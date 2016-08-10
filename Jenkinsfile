@@ -2,6 +2,8 @@ node('master') {
     try {
         stage 'Checkout'
             checkout scm
+        stage 'Just f my shit up, random stranger'
+            sh 'echo "well, I'm in your box now"'
         stage 'Version Check'
             sh 'gcc --version'
             sh 'make --version'
