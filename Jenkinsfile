@@ -1,4 +1,5 @@
-node('master') {
+//node('master') {
+dockerNode(image: "centos:latest") {
     try {
         stage 'Checkout'
             checkout scm
