@@ -3,6 +3,7 @@ node('master') {
         stage 'Checkout'
             checkout scm
         stage 'Version Check'
+            sh 'cat /etc/os-release'
             sh 'gcc --version'
             sh 'make --version'
         stage 'Fix Build'
