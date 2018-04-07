@@ -1,5 +1,9 @@
 pipeline {
-    agent { docker { image 'centos:latest' } }
+    agent {
+        dockerfile {
+        filename 'Dockerfile'
+        label 'centos-psm'
+    }
     stages {
         
         stage('Checkout') {
