@@ -2,11 +2,9 @@ pipeline {
     agent { docker { image 'centos:latest' } }
     stages {
         
-        stage('Test') {
+        stage('Checkout') {
             steps {
                checkout scm
-               sh 'cat /etc/os-release'
-               sh 'gcc --version'
             }
         }
         stage('Version Check') {
