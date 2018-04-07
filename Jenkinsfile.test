@@ -1,8 +1,6 @@
 pipeline {
-    agent {
-        docker { image 'centos:latest' }
-    }
     stages {
+        agent { docker { image 'centos:latest' } }
         stage('Test') {
             steps {
                checkout scm
