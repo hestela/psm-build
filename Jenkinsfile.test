@@ -1,11 +1,11 @@
 pipeline {
     agent {
         dockerfile {
-        filename 'Dockerfile'
-        label 'centos-psm'
+            filename 'Dockerfile'
+            label 'centos-psm'
+        }
     }
-    stages {
-        
+    stages {   
         stage('Checkout') {
             steps {
                checkout scm
