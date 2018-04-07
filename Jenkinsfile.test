@@ -2,8 +2,6 @@ pipeline {
     agent {
         dockerfile {
             filename 'Dockerfile'
-            label 'centos-psm'
-            dir ''
         }
     }
     stages {   
